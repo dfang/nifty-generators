@@ -1,0 +1,7 @@
+zh-CN:
+  activerecord:
+    symbolizes:
+      department_account:
+        type_identifier:
+          incoming: 收入
+          outgoing: 支出

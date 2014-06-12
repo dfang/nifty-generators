@@ -1,0 +1,18 @@
+zh-CN:
+  helpers:
+    submit:
+      create: "创建%{model}"
+      update: "保存%{model}"
+
+  activerecord:
+    symbolizes:
+      user:
+        gender:
+          male: 男
+          female: 女
+    models:
+      user: 用户
+    attributes:
+      common: &common
+    errors:
+      models:
