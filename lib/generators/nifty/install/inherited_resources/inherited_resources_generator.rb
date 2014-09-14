@@ -1,7 +1,7 @@
 module Nifty
   module Install
     module Generators
-      class InheritedResourceGenerator < Rails::Generators::Base
+      class InheritedResourcesGenerator < Rails::Generators::Base
         def copy_generator_files
           spec = Gem::Specification.find_by_name("inherited_resources")
           gem_root = spec.gem_dir
