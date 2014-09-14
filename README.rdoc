@@ -2,7 +2,7 @@
 
 A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more.
 
-I forked thisbecause i like the name, i changed nothing but just ADD some generators to copy generators from gems(rails,simple_form,haml_rails,inherited_resources) to current rails project's lib/generators for customization
+I forked thisbecause i like the name, i changed nothing but just ADD some generators to copy generators from gems(rails, simple_form, haml_rails, rspec-rails, inherited_resources) to current rails project's lib/generators for customization
 
 == Setup
 
@@ -19,6 +19,7 @@ Bundle install, then run rails g  nifty:install to see help messages
     rails g nifty:install                     # Print this message
     rails g nifty:install:rails               # This will copy lib/rails/generators in railtie gem to lib/generators
     rails g nifty:install:haml_rails          # This will copy lib/generators in haml-rails gem to lib/generators
+    rails g nifty:install:rspe_rails          # This will copy lib/generators in rspec-rails gem to lib/generators
     rails g nifty:install:simple_form         # This will copy lib/generators gem in simple_form to lib/generators
     rails g nifty:install:factory_girl_rails  # This will copy lib/generators gem in factory_girl_rails to lib/generators
     rails g nifty:install:inherited_resources # This will copy lib/generators gem in inherited_sources to lib/generators
