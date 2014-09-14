@@ -15,23 +15,21 @@ Add the gem to your Gemfile.
   end
 
 
-Bundle install, then run rails g  nifty:install to see help messages
+Bundle install, then run rails g nifty:install to see help messages
 
     rails g nifty:install                     # Print this message
     rails g nifty:install:rails               # This will copy lib/rails/generators in railtie gem to lib/generators
     rails g nifty:install:haml_rails          # This will copy lib/generators in haml-rails gem to lib/generators
     rails g nifty:install:rspec_rails         # This will copy lib/generators in rspec-rails gem to lib/generators
-    rails g nifty:install:simple_form         # This will copy lib/generators gem in simple_form to lib/generators
-    rails g nifty:install:factory_girl_rails  # This will copy lib/generators gem in factory_girl_rails to lib/generators
-    rails g nifty:install:inherited_resources # This will copy lib/generators gem in inherited_sources to lib/generators
+    rails g nifty:install:simple_form         # This will copy lib/generators in simple_form gem to lib/generators
+    rails g nifty:install:factory_girl_rails  # This will copy lib/generators in factory_girl_rails gem to lib/generators
+    rails g nifty:install:inherited_resources # This will copy lib/generators in inherited_sources gem to lib/generators
 
 Don't forget to copy these settings to disable some generator
 
     config.generators do |g|
       g.orm                   false # active_record, set this to false to disable model file generation when scaffold admin ui
       g.template_engine       :haml # erb
-      # g.test_framework      :test_unit, fixture: true
-      # g.test_framework      :rspec
       g.test_framework        nil
       g.stylesheets           false
       g.javascripts           false
