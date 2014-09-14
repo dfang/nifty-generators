@@ -2,7 +2,7 @@
 
 A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more.
 
-I forked thisbecause i like the name, i changed nothing but just ADD some generators to copy generators from gems(rails, simple_form, haml_rails, rspec-rails, inherited_resources) to current rails project's lib/generators for customization
+I forked thisbecause i like the name, i changed nothing but just ADD some generators to copy generators from gems(rails, simple_form, haml_rails, rspec-rails, inherited_resources) to current rails project's lib/generators for customization, this is especially useful **when you scaffolding an admin ui**
 
 == Setup
 
@@ -14,13 +14,28 @@ Add the gem to your Gemfile.
     gem "nifty-generators", github: 'dfang/nifty-generators'
   end
 
+
 Bundle install, then run rails g  nifty:install to see help messages
 
     rails g nifty:install                     # Print this message
     rails g nifty:install:rails               # This will copy lib/rails/generators in railtie gem to lib/generators
     rails g nifty:install:haml_rails          # This will copy lib/generators in haml-rails gem to lib/generators
-    rails g nifty:install:rspe_rails          # This will copy lib/generators in rspec-rails gem to lib/generators
+    rails g nifty:install:rspec_rails         # This will copy lib/generators in rspec-rails gem to lib/generators
     rails g nifty:install:simple_form         # This will copy lib/generators gem in simple_form to lib/generators
     rails g nifty:install:factory_girl_rails  # This will copy lib/generators gem in factory_girl_rails to lib/generators
     rails g nifty:install:inherited_resources # This will copy lib/generators gem in inherited_sources to lib/generators
 
+Don't forget to copy these settings to disable some generator
+
+    config.generators do |g|
+      g.orm                   false # active_record, set this to false to disable model file generation when scaffold admin ui
+      g.template_engine       :haml # erb
+      # g.test_framework      :test_unit, fixture: true
+      # g.test_framework      :rspec
+      g.test_framework        nil
+      g.stylesheets           false
+      g.javascripts           false
+      g.assets                false
+      g.helper                false
+      g.jbuilder              false
+    end
