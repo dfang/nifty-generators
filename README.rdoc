@@ -2,7 +2,7 @@
 
 A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more.
 
-I forked thisbecause i like the name, i changed nothing but just ADD some generators to copy generators from gems(rails, simple_form, haml_rails, rspec-rails, inherited_resources) to current rails project's lib/generators for customization, this is especially useful **when you scaffolding an admin ui**
+I forked this because i like the name, i changed nothing but just ADD some generators to copy generators from gems(rails, simple_form, haml_rails, rspec-rails, inherited_resources) to current rails project's lib/generators for customization, this is especially useful when you scaffolding an admin UI
 
 == Setup
 
