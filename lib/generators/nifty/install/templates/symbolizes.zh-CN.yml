@@ -1,7 +1,28 @@
 zh-CN:
   activerecord:
     symbolizes:
-      department_account:
+      feature:
         type_identifier:
-          incoming: 收入
-          outgoing: 支出
+          artwork: 作品
+          episode: 教程
+          stall: 铺子
+          item: 商品
+          shop: 卖家
+        state:
+          pending: 未开始
+          published: 已经开始
+          closed: 关闭
+      artwork:
+        is_featured:
+          'true': '推荐'
+          'false': '非推荐'
+      user:
+        gender:
+          'male': '男'
+          'female': '女'
+    errors:
+      models:
+        coupon:
+          attributes:
+            end_at:
+              end_should_greater_than_start: '结束日期必须大于开始日期'

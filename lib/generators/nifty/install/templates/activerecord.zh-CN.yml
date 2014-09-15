@@ -12,7 +12,35 @@ zh-CN:
           female: 女
     models:
       user: 用户
+      category: 分类
+      product: 产品
     attributes:
       common: &common
+        id: 编号
+        title: 标题
+        name: 名称
+        body: 内容
+        description: 描述
+        position: 排序位置
+        state: 状态
+        phone: 电话
+        province_id: 省
+        city_id: 市
+        district_id: 区
+        location: 具体位置
+        category_id: 分类
+        is_featured: 是否推荐
+        price: 价格
+        photos_count: 图片数
+        products_count: 产品数
+        fans_count: 粉丝数
+        created_at: 创建于
+        updated_at: 更新于
+        confirmed_at: 确认于
+        start_at: 开始于
+        end_at: 结束于
+        published_at: 发布于
+      user:
+        <<: *common
     errors:
       models:
