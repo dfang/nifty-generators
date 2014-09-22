@@ -27,7 +27,7 @@ Example:
     rails g nifty:install:yaml                # This will copy some yaml files to config/locales
     rails g nifty:install:rails               # This will copy lib/rails/generators in railtie gem to lib/generators
     rails g nifty:install:haml_rails          # This will copy lib/generators in haml-rails gem to lib/generators
-    rails g nifty:install:rspec-rails         # This will copy lib/generators in haml-rails gem to lib/generators
+    rails g nifty:install:rspec_rails         # This will copy lib/generators in haml-rails gem to lib/generators
     rails g nifty:install:simple_form         # This will copy lib/generators gem in simple_form to lib/generators
     rails g nifty:install:factory_girl_rails  # This will copy lib/generators gem in factory_girl_rails to lib/generators
     rails g nifty:install:inherited_resources # This will copy lib/generators gem in inherited_sources to lib/generators
