@@ -6,9 +6,9 @@ module Nifty
           spec = Gem::Specification.find_by_name("railties")
           gem_root = spec.gem_dir
           generators_files = gem_root + "/lib/rails/generators"
-          FileUtils.mkdir_p 'lib/generators'
-          FileUtils.cp_r generators_files, 'lib/'
-          p 'copied rails generators to lib/'
+          FileUtils.mkdir_p 'lib/rails/generators'
+          FileUtils.cp_r generators_files, 'lib/rails'
+          p 'copied rails generators to lib/rails/'
         end
       end
     end
